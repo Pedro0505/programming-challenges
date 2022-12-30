@@ -32,10 +32,7 @@ public class URI1038 {
 
 		double price = stock.get(line[0]);
 		double quantity = Double.parseDouble(line[1]);
-		
-		System.out.println(price);
-		System.out.println(quantity);
-		
+
 		double result = price * quantity;
 
 		System.out.printf("Total: R$ %.2f\n", result);
