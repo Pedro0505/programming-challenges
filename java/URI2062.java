@@ -29,7 +29,7 @@ public class URI2062 {
  
 		Scanner sc = new Scanner(System.in);
 		
-		Integer n = sc.nextInt();
+		sc.nextInt();
 	
 		sc.nextLine();
 		
