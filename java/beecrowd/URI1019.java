@@ -1,4 +1,4 @@
-package java;
+package beecrowd;
 
 import java.io.IOException;
 import java.util.Scanner;
