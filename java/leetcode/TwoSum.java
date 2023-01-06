@@ -1,5 +1,7 @@
 package leetcode;
 
+// https://leetcode.com/problems/two-sum/submissions/872117902/
+
 public class TwoSum {
     public static int[] twoSum(int[] nums, int target) {
         int[] result = new int[2];

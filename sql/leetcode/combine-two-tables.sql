@@ -1,3 +1,5 @@
+-- https://leetcode.com/problems/combine-two-tables/submissions/872126205/
+
 SELECT 
     p.firstName, p.lastName, a.city, a.state
 FROM

@@ -3,6 +3,8 @@ package leetcode;
 import java.util.ArrayList;
 import java.util.Collections;
 
+// https://leetcode.com/problems/plus-one/submissions/872239586/
+
 public class RichestCustomerWealth {
     public static int maximumWealth(int[][] accounts) {
 		ArrayList<Integer> result = new ArrayList<>();

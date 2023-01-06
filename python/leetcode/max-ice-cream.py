@@ -1,3 +1,5 @@
+# https://leetcode.com/problems/maximum-ice-cream-bars/submissions/872744508/
+
 def maxIceCream(costs, coins):
     costs.sort()
 
