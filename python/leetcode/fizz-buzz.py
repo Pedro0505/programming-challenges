@@ -1,9 +1,15 @@
 from typing import List
 
+# https://leetcode.com/problems/fizz-buzz/
+
 
 class Solution:
     def fizzBuzz(self, n: int) -> List[str]:
         lst = list()
+        if n == 1:
+            lst.append("1")
+            return lst
+
         lst.append("1")
         lst.append("2")
 

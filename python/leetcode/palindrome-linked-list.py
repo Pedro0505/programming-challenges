@@ -1,6 +1,8 @@
 from typing import Optional
 
 
+# https://leetcode.com/problems/palindrome-linked-list/submissions/876102483/
+
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
