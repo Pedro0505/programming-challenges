@@ -9,18 +9,19 @@ class ListNode:
 
 class Solution:
     def isPalindrome(self, head: Optional[ListNode]) -> bool:
-        vals = list()
+        node = head
+        l_vals = ""
 
-        self.get_val(head, vals)
+        while(node is not None):
+            l_vals += str(node.val)
 
-        reverse = list(reversed(vals))
+            node = node.next
 
-        return vals == reverse
+        return l_vals == l_vals[::-1]
 
-    def get_val(self, node, vals):
-        if node is None:
-            return
 
-        vals.append(node.val)
+a = Solution().isPalindrome(
+    ListNode(1, ListNode(2, ListNode(2, ListNode(1))))
+)
 
-        return self.get_val(node.next, vals)
+print(a)
