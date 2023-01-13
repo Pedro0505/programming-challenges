@@ -10,12 +10,7 @@ class TreeNode:
 
 class Solution:
     def isSymmetric(self, root: Optional[TreeNode]) -> bool:
-        right = root.right
-        left = root.left
-
-        a = self.is_same(right, left)
-
-        return a
+        return self.is_same(root.right, root.left)
 
     def is_same(self, q, p):
         if p is None and q is None:
