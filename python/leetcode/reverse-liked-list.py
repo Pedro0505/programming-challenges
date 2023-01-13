@@ -11,26 +11,31 @@ class ListNode:
 
 class Solution:
     def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
-        lst = list()
+        vals = list()
 
-        self.get_val(head, lst)
+        self.get_val(head, vals)
 
-        lst.reverse()
+        vals.reverse()
 
-        heads = ListNode(lst[0])
-        lst.pop(0)
-        node = heads
+        self.changeLinkedList(head, vals, 0)
 
-        for val in lst:
-            node.next = ListNode(val)
-            node = node.next
+        return head
 
-        return heads
-
-    def get_val(self, node, lst):
+    def changeLinkedList(self, node, vals, index):
         if node is None:
             return
 
-        lst.append(node.val)
+        if index == len(vals):
+            return
 
-        return self.get_val(node.next, lst)
+        node.val = vals[index]
+
+        return self.changeLinkedList(node.next, vals, index + 1)
+
+    def get_val(self, node, vals):
+        if node is None:
+            return
+
+        vals.append(node.val)
+
+        return self.get_val(node.next, vals)
